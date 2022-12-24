@@ -1,0 +1,22 @@
+Loss function is a method of evaluating how well your algo is modelling your dataset.
+measures the performance of algo
+loss more->poor performance
+mathematical function
+function of ML parameters
+
+hinge loss-in SVM
+
+In keras we have a functionality using which we can make our own loss functions.
+depending on the problem loss functions change
+
+difference b/w loss and cost function:-
+loss function is calculated over single training example.
+cost function is calculated over the whole batch.
+the activation function of the last node in an ANN must be linear for mse to be applicable to that ANN,in between layers(hidden layers),we can take any activation func.
+if our data has 25percent outliers,then neither mse nor mae will perform best.
+in huber loss,if our data point is not an outlier,then huber loss will behave like mse,if it is outlier then it will behave like mae.through delta we know whether the 
+point is hyperparameter or not.-used when our data has lots of outlier.
+bce-log loss
+sparse categorical entropy is preffered over categorical cross entropy because it is fast and we do not need to do one hot encoding(coding in 0 and 1) in it.
+if working with less number of categories use-cce
+if working with high number of categories use-sce
